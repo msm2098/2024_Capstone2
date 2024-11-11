@@ -1,0 +1,1 @@
+<?php echo '문제: XSS<br>'; echo '사용자: zzzz2<br>'; echo '세션값: 3ubhv1a4tr25ad61sc2pqn56p1'; ?>

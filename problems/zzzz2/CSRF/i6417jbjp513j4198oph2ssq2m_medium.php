@@ -1,0 +1,1 @@
+<?php echo '문제: CSRF<br>'; echo '사용자: zzzz2<br>'; echo '세션값: i6417jbjp513j4198oph2ssq2m'; ?>

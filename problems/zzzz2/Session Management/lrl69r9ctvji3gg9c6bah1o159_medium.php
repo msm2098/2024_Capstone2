@@ -1,0 +1,1 @@
+<?php echo '문제: Session Management<br>'; echo '사용자: zzzz2<br>'; echo '세션값: lrl69r9ctvji3gg9c6bah1o159'; ?>
