@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="72b34f5f-62ae-4eba-8555-6141f98ca0e0" name="61.245.248.211" url="">
+        <fileTransfer rootFolder="/home/moon" accessType="SFTP" host="61.245.248.211" port="222" sshConfigId="620bfa4a-b330-43e0-9f76-c31c5bff9009" sshConfig="moon@61.245.248.211:222 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

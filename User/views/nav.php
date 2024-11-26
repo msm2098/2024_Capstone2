@@ -6,7 +6,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a class="navbar-brand" href="http://192.0.0.2:8081">
+        <a class="navbar-brand" href="http://61.245.248.211">
             <img src="/public/resources/Logo.png" alt="LOGO" width="130px" height="auto">
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -21,7 +21,7 @@
                     <a class="btn btn-light btn-sm" href="#">사용가이드</a>
                 </li>
                 <li class="nav-item mt-2">
-                    <a class="btn btn-light btn-sm" href="#">게시판</a>
+                    <a class="btn btn-light btn-sm" href="http://61.245.248.211?controller=user&action=board">게시판</a>
                 </li>
 
                 <?php

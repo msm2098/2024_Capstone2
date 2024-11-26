@@ -8,10 +8,20 @@ $controller = new controller();
             if (isset($_GET['action']) && $_GET['action'] === 'logout') {
                 $controller->logout();
             } else if (isset($_GET['action']) && $_GET['action'] === 'problem') {
-                $controller->problem();
+                $type=isset($_GET['type']) ? $_GET['type']:'none';
+                $difficulty=isset($_GET['difficulty']) ? $_GET['difficulty']:'none';
+                $controller->problem($difficulty,$type);
+            } else if (isset($_GET['action']) && $_GET['action'] === 'submit') {
+                $type=isset($_GET['type']) ? $_GET['type']:'none';
+                $difficulty=isset($_GET['difficulty']) ? $_GET['difficulty']:'none';
+                if($type === 'none' || $difficulty === 'none'){
+                    echo"<script>alert('비정상적인접근')</script>";
+                }else {
+                    $controller->submitscore($_GET['type'], $_GET['difficulty']);
+                }
             }
         }else{
-            $controller->problem();
+            $controller->problem('none','none');
         }
     }else{
         if(isset($_GET['token'])){
@@ -20,7 +30,7 @@ $controller = new controller();
         }else{
             echo "<script>
             alert('비정상적인 접근 입니다.');
-            window.location.href = 'http://192.0.0.2:8081';
+            window.location.href = 'http//61.245.248.211';
           </script>";
         }
     }

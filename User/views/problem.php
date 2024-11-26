@@ -26,7 +26,7 @@ include ('nav.php');
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3  justify-content-center">
 
             <div class="col d-flex justify-content-center">
-                <a href="your-link-here-1" class="text-decoration-none">
+                <a href="/index.php?controller=<?php echo $_SESSION['session_value']?>&action=problem&type=sqlinjection" class="text-decoration-none">
                     <div class="card shadow-sm" style="Width:15rem;">
                         <img src="/public/resources/FAF7BE63-55A9-4E68-9A37-6BD45F7B5591_1_201_a.jpeg" class="card-img-top" alt="CSRF" width="100%" height="225">
 
@@ -39,7 +39,7 @@ include ('nav.php');
 
             <!-- 카드 2 -->
             <div class="col d-flex justify-content-center">
-                <a href="your-link-here-2" class="text-decoration-none">
+                <a href="/index.php?controller=<?php echo $_SESSION['session_value']?>&action=problem&type=xss" class="text-decoration-none">
                     <div class="card shadow-sm" style="Width:15rem;">
                        <img src="/public/resources/scripting.png" class="card-img-top" alt="CSRF" width="100%" height="225">
 
@@ -51,11 +51,11 @@ include ('nav.php');
             </div>
 
             <div class="col d-flex justify-content-center">
-                <a href="your-link-here-3" class="text-decoration-none">
+                <a href="/index.php?controller=<?php echo $_SESSION['session_value']?>&action=problem&type=lfi" class="text-decoration-none">
                     <div class="card shadow-sm" style="Width:15rem;">
-                        <img src="/public/resources/9283788.webp" class="card-img-top" alt="CSRF" width="100%" height="225">
+                        <img src="/public/resources/brute-force.png" class="card-img-top" alt="CSRF" width="100%" height="225">
                         <div class="card-body">
-                            <p class="card-text text-center">CSRF</p>
+                            <p class="card-text text-center">Brute Force</p>
                         </div>
                     </div>
                 </a>
