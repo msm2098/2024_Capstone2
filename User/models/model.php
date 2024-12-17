@@ -73,6 +73,15 @@ class Model {
         return $base64UrlHeader . "." . $base64UrlEncryptedPayload . "." . $base64UrlEncryptedSymmetricKey . "." . $base64UrlSignature;
     }
 
-
+public function createTable($username){
+            $query = $this->db->prepare("CREATE TABLE ? (id varchar(20) ,pw varchar(100))");
+            $query->bind_param("s", $username);
+            $query->execute();
+            $query = $this->db->prepare("INSERT INTO ? (id  ,pw ) values ('admin','root')";
+            $query->bind_param("s", $username);
+            $query->execute();
+            
+            return false;
+        }
 }
 ?>
